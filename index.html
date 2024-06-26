@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eze's Coding Journey</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #34838d;
+            --secondary-color: #e29127;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            background-image: url('background.png'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: var(--secondary-color);
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        main {
+            padding: 40px;
+            max-width: 800px; /* Adjusted for readability and responsiveness */
+            margin: auto;
+            background-color: rgba(224, 229, 153, 0.9); /* Background for main content */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+        
+        p {
+            margin-bottom: 1em;
+        }
+        
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        .center-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .right-image, .left-image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 40%; /* Adjust size as needed */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .right-image {
+            float: right;
+        }
+        
+        .left-image {
+            float: left;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 5px;
+        }
+        
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        a:hover {
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Eze's Coding World</h1>
+    </header>
+    <main>
+        <h2>About Me</h2>
+        <img src="me.jpg" alt="Picture of Eze" class="right-image">
+        <p>Hi, I'm <span class="highlight">Eze</span>, a 9th grader from Hermantown who loves coding!</p>
+        <p>I'm passionate about <span class="highlight">math and science</span>, which fuels my interest in coding. When I'm not programming, you can find me solving math problems or exploring scientific concepts.</p>
+        <p>In the future, I'm interested in becoming either a <span class="highlight">programmer or a pilot</span>. Both fields fascinate me, and I'm excited to see where my journey takes me!</p>
+        
+        <h2>My Coding Journey</h2>
+        <p>I'm constantly learning new programming languages and creating exciting projects. Follow my journey as I explore the world of code and apply my math and science skills to solve real-world problems!</p>
+        
+        <h2>College Majors I Plan to Pursue</h2>
+        <ul>
+            <li><strong>Bachelor of Science in Physics:</strong> Learn about the natural world and prepare for careers in engineering, research, and teaching.</li>
+            <li><strong>Bachelor of Science in Aviation Maintenance:</strong> Focus on fixing and maintaining aircraft, preparing for careers as aviation technicians and inspectors.</li>
+            <li><strong>Bachelor of Science in Aeronautics:</strong> Study the science of flight and prepare for careers in airport management, airline operations, and aerospace research.</li>
+            <li><strong>Bachelor of Science in Aviation Management:</strong> Blend aviation studies with business, preparing for roles in aviation operations and management.</li>
+        </ul>
+        
+        <h2>Pictures</h2>
+        <div class="left-image">
+            <img src="dragon1.jpg" alt="Dragon 1" style="max-width: 100%;">
+        </div>
+        <div class="right-image">
+            <img src="dragon2.jpg" alt="Dragon 2" style="max-width: 100%;">
+        </div>
+        
+        <h2>Introduction</h2>
+        <div class="video-container">
+            <video controls width="100%" height="auto">
+                <source src="Eze.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+        
+        <h2>Play My Flappy Bird Game</h2>
+        <p>Click the link below to play my version of the classic Flappy Bird game!</p>
+        <a href="flappbird.html">Check out my Flappy Bird game!</a>
+    </main>
+</body>
+</html>
